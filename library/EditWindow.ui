@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>282</width>
+    <height>533</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>282</width>
+    <height>533</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>282</width>
+    <height>533</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>470</y>
+     <width>111</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+background-color: rgb(0, 255, 127);
+font: 700 9pt &quot;Arial&quot;;
+border: 1px solid rgb(0, 0, 0);
+border-radius: 7px;
+}
+QPushButton:pressed {
+background-color: rgb(255, 255, 255);
+}</string>
+   </property>
+   <property name="text">
+    <string>Сохранить</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>400</y>
+     <width>241</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+background-color: rgb(255, 255, 127);
+font: 700 9pt &quot;Arial&quot;;
+border: 1px solid rgb(0, 0, 0);
+border-radius: 7px;
+}
+QPushButton:pressed {
+background-color: rgb(255, 255, 255);
+}</string>
+   </property>
+   <property name="text">
+    <string>Сброс</string>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_3">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>470</y>
+     <width>111</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+background-color: rgb(255, 101, 101);
+font: 700 9pt &quot;Arial&quot;;
+border: 1px solid rgb(0, 0, 0);
+border-radius: 7px;
+}
+
+QPushButton:hover {
+background-color: rgb(255, 0, 0);
+}</string>
+   </property>
+   <property name="text">
+    <string>Выйти</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>40</y>
+     <width>241</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);
+font: 700 9pt &quot;Arial&quot;;
+border: 1px solid rgb(0, 0, 0);
+border-radius: 7px;</string>
+   </property>
+   <property name="text">
+    <string>Создать событие</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>90</y>
+     <width>221</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);
+font: 700 9pt &quot;Arial&quot;;
+border: 1px solid rgb(0, 0, 0);
+border-radius: 7px;</string>
+   </property>
+   <property name="placeholderText">
+    <string>Название события</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_2">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>130</y>
+     <width>221</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="mouseTracking">
+    <bool>true</bool>
+   </property>
+   <property name="tabletTracking">
+    <bool>false</bool>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);
+font: 700 9pt &quot;Arial&quot;;
+border: 1px solid rgb(0, 0, 0);
+border-radius: 7px;</string>
+   </property>
+   <property name="frame">
+    <bool>true</bool>
+   </property>
+   <property name="echoMode">
+    <enum>QLineEdit::EchoMode::Normal</enum>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignTop</set>
+   </property>
+   <property name="dragEnabled">
+    <bool>false</bool>
+   </property>
+   <property name="placeholderText">
+    <string>Описание события</string>
+   </property>
+   <property name="cursorMoveStyle">
+    <enum>Qt::CursorMoveStyle::LogicalMoveStyle</enum>
+   </property>
+   <property name="clearButtonEnabled">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QDateTimeEdit" name="dateTimeEdit">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>240</y>
+     <width>121</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);
+font: 700 9pt &quot;Arial&quot;;
+border: 1px solid rgb(0, 0, 0);
+border-radius: 7px;</string>
+   </property>
+   <property name="wrapping">
+    <bool>false</bool>
+   </property>
+   <property name="minimumDateTime">
+    <datetime>
+     <hour>0</hour>
+     <minute>0</minute>
+     <second>0</second>
+     <year>2025</year>
+     <month>1</month>
+     <day>8</day>
+    </datetime>
+   </property>
+   <property name="calendarPopup">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>310</y>
+     <width>139</width>
+     <height>74</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="sizeConstraint">
+     <enum>QLayout::SizeConstraint::SetDefaultConstraint</enum>
+    </property>
+    <item>
+     <widget class="QRadioButton" name="radioButton">
+      <property name="styleSheet">
+       <string notr="true">font: 700 9pt &quot;Arial&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Высокий приоритет</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QRadioButton" name="radioButton_2">
+      <property name="styleSheet">
+       <string notr="true">font: 700 9pt &quot;Arial&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Средний приоритет</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QRadioButton" name="radioButton_3">
+      <property name="styleSheet">
+       <string notr="true">font: 700 9pt &quot;Arial&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Низкий приоритет</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
